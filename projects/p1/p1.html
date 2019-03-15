@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Jeena Yin / 尹琪娅 / Duo-Synth</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="keywords" content="computer, computer science, sound design, interaction, portfolio, art, cmu, jeena, yin, jeena yin, scholarship, music, music technology, bcsa" />
+<meta http-equiv="author" content="Jeena Yin" />
+<meta http-equiv="pragma" content="no-cache" />
+
+<!-- CSS -->
+<link rel="stylesheet" href="../../css/w3.css">
+<link rel="stylesheet" href="../../css/style.css">
+
+<!-- fonts & attributes -->
+<link href="http://fonts.googleapis.com/css?family=Quicksand:300,400,700" rel="stylesheet" type="text/css">
+<link href="https://fonts.googleapis.com/css?family=Codystar|Flamenco" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/yin.png">
+
+<!-- scripts -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js" type="text/javascript"></script>
+<script src="../../scripts/typed.js" type="text/javascript"></script>
+<script src="../../scripts/main.js"></script>
+
+<style>
+h1,h2,h3,h4,h5 {font-family: "Flamenco", sans-serif}
+body {font-family: "Quicksand", sans-serif}
+
+body {font-size:19px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+
+<body>
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-top w3-padding" style="z-index:3;width:230px;font-weight:bold;" id="mySidebar"><br>
+  <!-- floating back button -->
+  <div class="float">
+    <button class="onlyBigScreens w3-button w3-round-tiny w3-hover-red w3-text-red" onclick="goBack()">◀︎</button>
+  </div>
+  <div class="w3-container w3-round-small w3-hover-red w3-hover-text-white w3-text-red">
+    <a href="../../index.html" onclick="w3_close()"><h3 class="w3-padding-64"><b>Jeena<br>Yin</b></h3></a>
+  </div>
+  <div class="w3-bar-block">
+    <!--button onclick="window.location.href='../../index.html#';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-yellow sideBarItem">My Story</button-->
+    <button onclick="window.location.href='../../index.html#Duo-Synth';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-orange sideBarItem">Duo-Synth</button>
+    <button onclick="window.location.href='../../index.html#experiences';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-aqua sideBarItem">Experiences</button>
+    <button onclick="window.location.href='../../index.html#coursework';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-green sideBarItem">Coursework</button>
+    <button onclick="window.location.href='../../static/Resume.pdf';w3_close()"
+    class="w3-bar-item w3-round-small w3-button w3-hover-pink sideBarItem">Résumé</button>
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-white w3-padding">
+  <button class="w3-bar-item w3-medium w3-button w3-hover-red w3-text-red w3-round-small w3-margin-right" onclick="goBack()">◀︎</button>
+  <button onclick="w3_open()" class="w3-button w3-medium w3-round-small w3-red w3-margin-right w3-hover-white">☰</button>
+  <button onclick="window.location.href='../../index.html'" class="w3-bar-item w3-medium w3-button w3-hover-text-red w3-hover-none" style="font-family:'Flamenco',sans-serif;">Jeena Yin</button>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:280px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:80px">
+    <h1 class="w3-jumbo">Duo-Synth</h1>
+    <h3 class="w3-text-red">Multi-user Music Movement Interaction</h3>
+  </div>
+
+  <!-- About Project -->
+  <div class="w3-container" style="margin-top:20px">
+    Duo-Synth is a personal project in music-movement interaction. I'm researching on expressive ways to communicate sound through movements, using 2 kinect 3D cameras.
+    It aims to create an intuitive storytelling channel for artists to integrate sound art and dance in live performance.
+  </div>
+
+  <div class="videoWrapper" style="margin-left:45px;margin-right:55px;margin-top:20px">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/da7pxSzSaDY?rel=0&amp;showinfo=0"
+      frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <div class="w3-container" style="margin-top:20px">
+    <p>Different body movements are directly linked with parameters of the music piece, such that fast movement should result in more complicated sound and vise versa,
+    and higher head position corresponds to low/high pass filters. Also, for the two dancers in the piece, I designed the system to work in a way that they can move freely in the
+    space covered by both 3D cameras and interact with each other.</p>
+
+    <p>This interactive system is originally made for an experimental dance performance in Brady's Bend limestone cave
+    (<u><a class="w3-text-pink w3-hover-text-yellow" href="https://www.cmu.edu/news/stories/archives/2017/december/subsurface-festival.html">more info</a></u>).
+    I collaborated with Evan Neely and Sara Adkins in making this system, where Evan composed electronic music which the system is interacting with.</p>
+  </div>
+
+  <div class="w3-container" style="margin-top:20px">
+    <a href="https://www.cmu.edu/news/stories/archives/2017/december/subsurface-festival.html"><img src="cave.jpg" style="width:100%;height=100px"
+    alt="Picture of the texture of the walls in Brady's Bend Limestone Cave"></a>
+  </div>
+
+  <div class="w3-container" style="margin-top:20px">
+    This is where the piece was performed.
+  </div>
+
+  <div class="w3-container" style="margin-top:20px">
+    <img src="cave.png" style="width:100%;height=100px"
+    alt="Picture of the Performance of the interactive piece: two people wearing white costumes with blue and yellow EL wires dancing.">
+  </div>
+
+  <div class="w3-container" style="margin-top:20px">
+    We were wearing DIY EL wire costumes while performing this piece in the limestone cave.
+  </div>
+
+  <div class="videoWrapper" style="margin-left:45px;margin-right:55px;margin-top:20px">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/paKVLRPvE50?rel=0&amp;showinfo=0"
+    frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <div class="w3-container" style="margin-top:20px">
+    In the second stage of the research, I built a digital synthesizer to directly extract data from users to synthesize sound.
+    It can detect the rhythm of users' movements and create beat. The background is a prototype of projection that also
+    corresponds to users' movements.
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- Copyright Container big screen-->
+<h4 class="onlyBigScreens w3-container w3-padding-small w3-center w3-text-red" style="margin-left:230px;margin-top:100px">
+  Site built by Jeena Yin with ❤︎
+</h4>
+
+<!-- Copyright Container small screen-->
+<h4 class="onlySmallScreens w3-container w3-padding-small w3-center w3-text-red" style="margin-top:100px">
+  Site built by Jeena Yin with ❤︎
+</h4>
+
+</body>
+</html>
